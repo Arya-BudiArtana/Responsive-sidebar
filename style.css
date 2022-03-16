@@ -18,6 +18,7 @@ a{
     --primary-color: #695CFE;
     --toggle-color: #F6F5FF;
     --text-color: rgb(122, 121, 121);
+    --primary-color-light: rgb(235, 233, 236);
 
     --tran-03: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -65,6 +66,10 @@ body {
 
 .sidebar li .icon {
     font-size: 20px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidebar li .icon, 
@@ -116,5 +121,28 @@ header .image-text .header-text {
 }
 
 .sidebar li a {
-    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    transition: var(--tran-04);
+}
+.sidebar .search-box {
+    background: var(--primary-color-light);
+}
+
+.sidebar .search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background: var(--primary-color-light);
+}
+
+.sidebar li a:hover{
+    background: var(--primary-color);
 }
